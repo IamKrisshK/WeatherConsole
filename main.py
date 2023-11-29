@@ -8,7 +8,7 @@ from PIL import Image, ImageTk
 customtkinter.set_appearance_mode("system")
 customtkinter.set_default_color_theme("blue")
 
-pyglet.font.add_file(r'C:\Users\kriss\College\PPS\Project\Ketika-Light.ttf')
+pyglet.font.add_file(r'Ketika-Light.ttf')
 
 # Api
 api_key = '30d4741c779ba94c470ca1f63045390a'
@@ -43,18 +43,18 @@ app = customtkinter.CTk()
 app.geometry("640x480")
 app.minsize(640,480)
 app.maxsize(640,480)
-bgimg=ImageTk.PhotoImage(Image.open(r"C:\Users\kriss\College\PPS\Project\bg.png"),master=app)
+bgimg=ImageTk.PhotoImage(Image.open(r"bg.png"),master=app)
 limg=Label(app,image=bgimg)
 limg.place(x=0,y=0,relheight=1,relwidth=1)
 app.title("Weather Console")
 app.attributes("-alpha",0.76)
-app.iconbitmap(r"C:\Users\kriss\College\PPS\Project\Weat.ico")
+app.iconbitmap(r"Weat.ico")
 
 # Images
-imgcloud = ImageTk.PhotoImage(Image.open(r"C:\Users\kriss\College\PPS\Project\clouds.png"))
-imgclear = ImageTk.PhotoImage(Image.open(r"C:\Users\kriss\College\PPS\Project\clear.png"))
-imgrain = ImageTk.PhotoImage(Image.open(r"C:\Users\kriss\College\PPS\Project\rain.png"))
-imgdefault = ImageTk.PhotoImage(Image.open(r"C:\Users\kriss\College\PPS\Project\default.png"))
+imgcloud = ImageTk.PhotoImage(Image.open(r"clouds.png"))
+imgclear = ImageTk.PhotoImage(Image.open(r"clear.png"))
+imgrain = ImageTk.PhotoImage(Image.open(r"rain.png"))
+imgdefault = ImageTk.PhotoImage(Image.open(r"default.png"))
 label4 = Label(image=imgdefault, width=5, height=9)
 label4.pack()
 
